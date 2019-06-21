@@ -32,8 +32,8 @@ COPY pom.xml /usr/src/app
 WORKDIR /usr/src/app
 
 # Retrieve a fresh SSO Circle's certificate and store it within the application keystore
-RUN chmod +x /usr/src/app/src/main/resources/saml/update-certifcate.sh
-RUN cd /usr/src/app/src/main/resources/saml/ && sh ./update-certifcate.sh
+RUN chmod +x /usr/src/app/src/main/resources/saml/update-certificate.sh
+RUN cd /usr/src/app/src/main/resources/saml/ && sh ./update-certificate.sh
 
 # Speed up Maven JVM a bit
 ENV MAVEN_OPTS="-XX:+TieredCompilation -XX:TieredStopAtLevel=1"

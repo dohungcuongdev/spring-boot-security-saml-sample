@@ -83,7 +83,7 @@ I would like to say thank you to *Alexey Syrtsev* ([github.com/airleks](https://
 
 To update the SSOCircle certificates within the keystore, just run: 
 
-	cd src/main/resources/saml/ && sh ./update-certifcate.sh 
+	cd src/main/resources/saml/ && sh ./update-certificate.sh 
 
 2. Sometimes SSO Circle could display you an error during the authenticaton process. In this case, please update your federation metadata directly on [https://idp.ssocircle.com](https://idp.ssocircle.com):
 
